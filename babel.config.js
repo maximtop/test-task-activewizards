@@ -18,7 +18,6 @@ module.exports = (api) => {
       ['@babel/plugin-proposal-class-properties', { loose: true }],
       ['react-hot-loader/babel'],
       ['@babel/plugin-transform-runtime'],
-      ['@babel/plugin-syntax-dynamic-import'],
     ],
   };
 };

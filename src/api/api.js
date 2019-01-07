@@ -9,14 +9,12 @@ const confBinding = 'id';
 const docBinding = 'name';
 const langBinding = 'name';
 
-const aggregateData = (labels, data, binding) => {
-  return [...labels, ...data].reduce((acc, label) => {
-    const id = label[binding];
-    const oldValue = acc[id] || {};
-    acc[id] = { ...oldValue, ...label};
-    return acc;
-  }, {});
-};
+const aggregateData = (labels, data, binding) => [...labels, ...data].reduce((acc, label) => {
+  const id = label[binding];
+  const oldValue = acc[id] || {};
+  acc[id] = { ...oldValue, ...label };
+  return acc;
+}, {});
 
 const data = {
   confData: aggregateData(confLabels, confData, confBinding),

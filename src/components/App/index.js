@@ -14,12 +14,12 @@ class App extends Component {
     return (
       <div className="container">
         <div className="row">
-          <Header/>
+          <Header />
         </div>
         <div className="row">
-          <Column title="Language" data={langData} dataKey='langData'/>
-          <Column title="Doctype" data={docData} dataKey='docData'/>
-          <Column title="Confidentiality" data={confData} dataKey='confData'/>
+          <Column title="Language" data={langData} dataKey="langData" />
+          <Column title="Doctype" data={docData} dataKey="docData" />
+          <Column title="Confidentiality" data={confData} dataKey="confData" />
         </div>
       </div>
     );

@@ -16,7 +16,6 @@ class DataStore {
   @action
   hideWidget(widgetKey, dataKey) {
     this.data[dataKey][widgetKey].hidden = true;
-    console.log(this.data[dataKey][widgetKey]);
   }
 }
 
