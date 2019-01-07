@@ -7,3 +7,6 @@ Implement web dashboard with widgets
 
 **Full description:**
 <a href="https://drive.google.com/open?id=16fVYTVKOBB2OdWaFp6J32bI_9BnGQbYSfGWaNE6VnSk" target="_blank">Click here</a>
+
+<a href="https://maximtop.github.io/test-task-activewizards/" target="_blank">
+View on gh-pages</a>
