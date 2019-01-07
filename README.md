@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/maximtop/test-task-activewizards.svg?branch=master)](https://travis-ci.org/maximtop/test-task-activewizards)
+
 ## Test task for ActiveWizards
 
 **Short description:**
