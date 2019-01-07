@@ -1,10 +1,11 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: [
     './src/index.js',
   ],
-  mode: 'development',
   module: {
     rules: [
       {
@@ -22,14 +23,18 @@ module.exports = {
   resolve: { extensions: ['*', '.js', '.jsx'] },
   output: {
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: '/',
     filename: 'bundle.js',
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'public/index.html',
+    }),
+    new CleanWebpackPlugin(['dist']),
+  ],
   devtool: 'source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'public/'),
+    contentBase: path.join(__dirname, 'dist/'),
     port: 3000,
-    publicPath: 'http://localhost:3000/dist/',
-    historyApiFallback: true,
   },
 };
